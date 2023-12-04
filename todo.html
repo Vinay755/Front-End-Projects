@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-right: 40px;
+    width: 200px;
+  }
+
+
+  .plus-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 10px;
+    width:40px;
+    height: 30px;
+  }
+
+  .plus-button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+<div class="input-container">
+  <input type="text" class="input-box" placeholder="Add a new todo...">
+  <button class="plus-button">+</button>
+</div>
+</body>
+</html>

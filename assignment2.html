@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Sections</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      padding-top: 70px;
+      background-color: lightblue;
+    }
+    section {
+      transition: background-color 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      height: 500px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    #about {
+      background: linear-gradient(to bottom, #87CEFA, #48D1CC);
+    }
+    #contact {
+      background: linear-gradient(to bottom, #48D1CC, #9ACD32);
+    }
+    #skills {
+      background: linear-gradient(to bottom, #9ACD32, #FFD700);
+    }
+    .contact-form {
+      max-width: 400px;
+      padding: 20px;
+      border: 4px solid;
+      border-radius: 8px;
+      margin-top: 50px;
+      margin-right: 20%;
+    }
+    .additional-div {
+      width: 300px;
+      height: 300px;
+      /* background-color: lightpink; */
+      border: 2px solid;
+      border-radius: 8px;
+      margin-top: -350px;
+      margin-left: 60%;
+      display: flex;
+      justify-content: center;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:flex-start;
+      margin-top: 20px; */
+    }
+    .social-links a {
+      text-decoration: none;
+      color: black;
+      margin: 10 0px;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#navbarNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="about">
+    <h2> I am a Full Stack Developer Intern</h2>
+  </section>
+
+  <section id="contact">
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-secondary">Send</button>
+    </div>
+  </section>
+
+  <div class="additional-div">
+    <h2>Get In Touch</h2>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+  </div>
+
+  <section id="skills">
+    <h2>Skills Section</h2>
+  </section>
+
+  <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

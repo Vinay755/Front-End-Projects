@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.container {
+  width: 900px; /* Adjusted the width of the container to accommodate the added space */
+  height: 400px;
+  background-color: lightgoldenrodyellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between; /* Adjusted the spacing between children */
+  align-items: center;
+  padding: 0 20px; /* Added padding to create space at the beginning and end of the container */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.child {
+  width: 300px;
+  height: 350px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product {
+  width: 100%;
+  text-align: left;
+}
+
+.popular {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.popular ul {
+  padding: 0;
+}
+
+.popular li {
+  list-style: none;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: white;
+  font-size: 15px;
+  width: 150px;
+  margin-top: 10px; /* Adjusted the margin-top for the button */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-red {
+  background-color: red;
+  /* margin-top: 20px; */
+}
+
+.button-green {
+  background-color: red;
+  margin-top: 20px;
+  text-decoration: white;
+  width: 150px;
+}
+
+.button:hover {
+  background-color: lightgrey;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="child">
+    <div class="title">Marketing Hub</div>
+    <p class="content">Marketing automation software to help you drive revenue with high-quality leads, save time and resources, and measure and optimize your marketing investments.</p>
+    <div class="product">
+      <hr>
+      <h4 class="popular">Popular Features</h4>
+      <ul>
+        <li>Lead Generation</li>
+        <li style="margin-top: 10px;">Marketing Automation</li>
+        <li style="margin-top: 10px;">Analytics</li>
+      </ul>
+    </div>
+    <a href="#" class="button button-red">Learn More</a>
+  </div>
+  
+  <div class="child">
+    <div class="title">Sales Hub</div>
+    <p class="content">Powerful sales software to help teams close more deals, deepen relationships, and manage their pipeline more effectively.</p>
+    <div class="product">
+      <hr>
+      <h4 class="popular">Popular Features</h4>
+      <ul>
+        <li>Advanced CRM</li>
+        <li style="margin-top: 10px;">Meeting Scheduling</li>
+        <li style="margin-top: 10px;">Quotes</li>
+      </ul>
+    </div>
+    <a href="#" class="button button-green">Learn More</a>
+  </div>
+</div>
+
+</body>
+</html>
